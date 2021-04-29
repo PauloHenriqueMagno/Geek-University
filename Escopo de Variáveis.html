@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Seção 4 - Aula 13</title>
+</head>
+<body>
+	<h1>Seção 4 - Aula 13</h1>
+	<h2>Escopo de Variáveis</h2>
+
+	<script>
+		
+        // Escopo de Variáveis
+
+        function somar(num1, num2){
+            var valor = 5
+            return valor + num1 + num2;
+        }
+        
+        for(var i = 0; i < 5; i++){
+            var outra = 5;
+            console.log(i * outra);
+        }
+        
+        console.log(somar(4, 6));
+
+        //console.log(valor); //ReferenceError
+
+        console.log(outra);
+        
+	</script>
+
+</body>
+</html>

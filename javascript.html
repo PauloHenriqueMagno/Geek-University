@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="autor" content="Paulo Henrique Magno">
+</head>
+<body>
+	<h1>Javascript</h1>
+
+	<script>
+		var name1 = "Geek University";
+		var name2 = 'Javascript';
+
+		name1 = "Geek";
+
+		name2 = 42;
+
+		//Principais tipos de dados
+
+		/*var nome = 'Geek'; //string
+		var idade = 18; //int
+		var altura = 1.72; //float
+		var ativo = true; //booleano
+		var peso;
+		var alunos = ["Pedro", "Gustavo", "Camila"]; //Vetor (array)
+		var aluno = {
+			nome: 'Julia',
+			idade: 17,
+			peso: 58.4,
+			ativo: true
+		}; //objeto
+
+		console.log(name1);*/
+
+		var idade = 19;
+
+		if(idade >= 18){
+			console.log("Maior de idade");
+		}else{
+			console.log("Menor de idade");
+		}
+
+		if(idade <= 14){
+			console.log("Criança");
+		}else if(idade > 14 && idade < 18){
+			console.log("Adolescente");
+		}else{
+			console.log("Adulto");
+		}
+
+		//Dica Geek (verica valor)
+
+		if(1 == "1") {
+			console.log('Sim, 1 === "1"');
+		}else {
+			console.log("Não");
+		}
+
+		var valor = 42;
+		var valors = "42";
+
+		if(valor === "42"){
+			console.log('Sim, valor === "42"');
+		} else{
+			console.log("Não");
+		}
+
+		var sexo = 'f';
+
+		switch(sexo){
+			case 'm':
+				console.log("Masculino");
+				break;
+			case 'f':
+				console.log("Feminino");
+				break;
+			default:
+				console.log('Desconhecido');
+				break;
+		}
+
+		var s = 'f';
+		var masculino;
+
+		if(s === 'm'){
+			masculino = true;
+		} else{
+			masculino = false;
+		}
+		console.log(masculino);
+
+		//Simplificando
+		//var masc = (s === 'm');
+		var masc = s === 'm';
+		console.log(masc);
+
+
+		let d = new Date();
+		document.body.innerHTML = "<h1>Time right now is:  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+		"</h1>"
+
+		
+	</script>
+
+</body>
+</html>
